@@ -9,6 +9,7 @@ function isFullyQualifiedVersion(version) {
 }
 
 // https://nodejs.org/dist/index.json
+// https://github.com/actions/node-versions/blob/main/versions-manifest.json
 export async function resolveVersionFromManifest(version) {
 	core.info('Getting manifest from actions/node-versions@main');
 
@@ -22,7 +23,7 @@ export async function resolveVersionFromManifest(version) {
 		manifest,
 	);
 
-	if (result) {
+	if (result && result.files.length > 0) {
 		core.info(`Resolved to version "${result.version}"`);
 
 		return result.version;

@@ -27,7 +27,7 @@ jobs:
       - run: moon ci
 ```
 
-Multiple versions are supported through GitHub matrixs.
+Multiple versions can be supported through GitHub actions matrix.
 
 ```yaml
 # ...

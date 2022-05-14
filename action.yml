@@ -1,9 +1,9 @@
-name: 'moon'
+name: 'moon - Automatic tool versioning'
 author: 'Miles Johnson'
 description: 'Sets `MOON_*_VERSION` environment variables for moon supported tools.'
 inputs:
   node:
-    description: 'Node.js version'
+    description: 'Node.js version to resolve'
     required: false
 runs:
   using: 'node16'
