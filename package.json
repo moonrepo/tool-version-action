@@ -1,0 +1,22 @@
+{
+  "name": "@moonrepo/tool-version-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonrepo/tool-version-action.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moonrepo/tool-version-action/issues"
+  },
+  "homepage": "https://github.com/moonrepo/tool-version-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.8.2"
+  }
+}
