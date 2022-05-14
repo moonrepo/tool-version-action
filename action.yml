@@ -1,10 +1,13 @@
 name: 'moon'
+author: 'Miles Johnson'
 description: 'Sets `MOON_*_VERSION` environment variables for moon supported tools.'
 inputs:
   node:
     description: 'Node.js version'
     required: false
-    default: ''
 runs:
   using: 'node16'
   main: 'index.mjs'
+branding:
+  icon: 'moon'
+  color: 'purple'
