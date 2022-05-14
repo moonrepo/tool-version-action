@@ -4,6 +4,7 @@
   "description": "A GitHub action for setting version environment variables for supported moon tools.",
   "main": "index.mjs",
   "scripts": {
+    "build": "",
     "test": "tsc"
   },
   "repository": {
