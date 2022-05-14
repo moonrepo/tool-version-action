@@ -8,10 +8,6 @@ It achieves this by resolving an [input](#inputs) against the tool's official ma
 manifest) to determine a valid semantic version. Once resolved, it will set moon specific
 environment variables for subsequent steps.
 
-## Inputs
-
-- `node` - The Node.js version to resolve. Will set a `MOON_NODE_VERSION` environment variable.
-
 ## Installation
 
 ```yaml
@@ -42,4 +38,17 @@ jobs:
         with:
           node: ${{ matrix.node-version }}
       - run: moon ci
+```
+
+## Inputs
+
+- `node` - The Node.js version to resolve. Will set a `MOON_NODE_VERSION` environment variable.
+
+## Testing
+
+This action can be tested locally by defining an environment variable for the input you'd like test,
+and executing the `index.mjs` file. For example, if you'd like to test Node.js:
+
+```shell
+INPUT_NODE=16 node index.mjs
 ```

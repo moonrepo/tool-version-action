@@ -18,7 +18,7 @@ export async function resolveVersionFromManifest(version) {
 	core.info(`Resolving version "${version}" from manifest`);
 
 	const result = await tc.findFromManifest(
-		isFullyQualifiedVersion(version) ? version : `^${version}`,
+		isFullyQualifiedVersion(version) ? version : `~${version}`,
 		true,
 		manifest,
 	);

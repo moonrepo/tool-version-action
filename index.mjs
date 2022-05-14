@@ -4,6 +4,7 @@ import * as node from './node.mjs';
 function setEnvVar(name, value) {
 	core.exportVariable(name, value);
 	core.info(`Setting ${name} environment variable`);
+	console.log(process.env[name]);
 }
 
 try {
