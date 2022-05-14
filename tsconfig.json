@@ -1,0 +1,10 @@
+{
+  "extends": "tsconfig-beemo/tsconfig.json",
+	"compilerOptions": {
+		"allowJs": true,
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"noEmit": true
+	},
+	"include": ["*.mjs"]
+}
