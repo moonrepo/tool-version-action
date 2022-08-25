@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig-beemo/tsconfig.json",
+  "extends": "tsconfig-moon/tsconfig.json",
 	"compilerOptions": {
 		"allowJs": true,
 		"module": "nodenext",
