@@ -1,16 +1,16 @@
 // Code is loosely based on the official `setup-node` action:
 // @see https://github.com/actions/setup-node/blob/main/src/installer.ts
 
-import core from '@actions/core';
-import tc from '@actions/tool-cache';
+import * as core from '@actions/core';
+import * as tc from '@actions/tool-cache';
 
-function isFullyQualifiedVersion(version) {
+function isFullyQualifiedVersion(version: string) {
 	return version.split('.').length >= 3;
 }
 
 // https://nodejs.org/dist/index.json
 // https://github.com/actions/node-versions/blob/main/versions-manifest.json
-export async function resolveVersionFromManifest(version) {
+export async function resolveVersionFromManifest(version: string) {
 	core.info('Getting manifest from actions/node-versions@main');
 
 	const manifest = await tc.getManifestFromRepo('actions', 'node-versions', undefined, 'main');

@@ -2,7 +2,7 @@
   "extends": "tsconfig-moon/tsconfig.json",
   "compilerOptions": {
     "allowJs": true,
-    "module": "nodenext",
+    "module": "Node16",
     "moduleResolution": "nodenext",
     "noEmit": true
   },
@@ -10,7 +10,6 @@
     ".eslintrc.js",
     "*.js",
     "*.ts",
-		"*.mjs",
     "tests/*.ts"
   ]
 }
