@@ -47,8 +47,8 @@ jobs:
 ## Testing
 
 This action can be tested locally by defining an environment variable for the input you'd like test,
-and executing the `index.mjs` file. For example, if you'd like to test Node.js:
+and running the `test:input` script. For example, if you'd like to test Node.js:
 
 ```shell
-INPUT_NODE=16 node index.mjs
+INPUT_NODE=16 npm run test:input
 ```
