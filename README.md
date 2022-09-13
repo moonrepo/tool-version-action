@@ -34,6 +34,7 @@ jobs:
     strategy:
       matrix:
         node-version: [14, 16, 18]
+    steps:
       - uses: moonrepo/tool-version-action@v1
         with:
           node: ${{ matrix.node-version }}
