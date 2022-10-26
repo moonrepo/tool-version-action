@@ -1,6 +1,6 @@
 {
   "name": "@moonrepo/tool-version-action",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A GitHub action for setting version environment variables for supported moon tools.",
   "main": "dist/index.js",
   "scripts": {
@@ -19,18 +19,19 @@
   "author": "Miles Johnson",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.9.1",
+    "@actions/core": "^1.10.0",
+    "@actions/http-client": "^2.0.1",
     "@actions/tool-cache": "^2.0.1"
   },
   "devDependencies": {
-    "@types/node": "^18.7.18",
+    "@types/node": "^18.11.6",
     "@vercel/ncc": "^0.34.0",
-    "eslint": "^8.23.1",
-    "eslint-config-moon": "^1.0.1",
+    "eslint": "^8.26.0",
+    "eslint-config-moon": "^1.1.0",
     "prettier": "^2.7.1",
-    "prettier-config-moon": "^1.0.1",
+    "prettier-config-moon": "^1.1.0",
     "ts-node": "^10.9.1",
-    "tsconfig-moon": "^1.0.1",
-    "typescript": "^4.8.3"
+    "tsconfig-moon": "^1.1.0",
+    "typescript": "^4.8.4"
   }
 }
