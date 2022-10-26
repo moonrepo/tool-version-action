@@ -24,7 +24,7 @@ async function findVersionInManifest(version: string, manifest: tc.IToolRelease[
 		return result.version;
 	}
 
-	throw new Error(`Unable to find a version for value "${version}"!`);
+	return null;
 }
 
 // https://nodejs.org/dist/index.json
@@ -91,12 +91,12 @@ export async function resolveVersionFromDist(version: string) {
 		manifest.push({
 			files,
 			release_url: '', // not needed
-			stable: result.lts !== false,
+			stable: true,
 			version: result.version.slice(1), // remove v prefix
 		});
 	});
 
-	await findVersionInManifest(version, manifest);
+	return findVersionInManifest(version, manifest);
 }
 
 // https://github.com/actions/node-versions/blob/main/versions-manifest.json
@@ -105,5 +105,5 @@ export async function resolveVersionFromManifest(version: string) {
 
 	const manifest = await tc.getManifestFromRepo('actions', 'node-versions', undefined, 'main');
 
-	await findVersionInManifest(version, manifest);
+	return findVersionInManifest(version, manifest);
 }
