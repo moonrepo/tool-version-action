@@ -15,8 +15,8 @@ async function run() {
 
 		if (nodeVersion) {
 			const version =
-				(await node.resolveVersionFromManifest(nodeVersion)) ??
-				(await node.resolveVersionFromDist(nodeVersion));
+				(await node.resolveVersionFromDist(nodeVersion)) ??
+				(await node.resolveVersionFromManifest(nodeVersion));
 
 			if (version === null) {
 				throw new Error(`Unable to find a version for value "${nodeVersion}"!`);
