@@ -24,14 +24,14 @@
     "@actions/tool-cache": "^2.0.1"
   },
   "devDependencies": {
-    "@types/node": "^18.11.6",
-    "@vercel/ncc": "^0.34.0",
-    "eslint": "^8.26.0",
-    "eslint-config-moon": "^1.1.0",
-    "prettier": "^2.7.1",
-    "prettier-config-moon": "^1.1.0",
+    "@types/node": "^18.11.17",
+    "@vercel/ncc": "^0.36.0",
+    "eslint": "^8.30.0",
+    "eslint-config-moon": "^1.4.1",
+    "prettier": "^2.8.1",
+    "prettier-config-moon": "^1.1.1",
     "ts-node": "^10.9.1",
-    "tsconfig-moon": "^1.1.0",
-    "typescript": "^4.8.4"
+    "tsconfig-moon": "^1.2.1",
+    "typescript": "^4.9.4"
   }
 }
