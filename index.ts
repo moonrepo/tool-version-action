@@ -10,6 +10,12 @@ function setEnvVar(name: string, value: string) {
 }
 
 async function run() {
+	core.warning('This action is deprecated and will be removed in the future.');
+	core.warning(
+		'moon >= 1.14 supports partial versions, and overriding versions with environment variables.',
+	);
+	core.warning('Learn more: https://moonrepo.dev/docs/guides/open-source');
+
 	try {
 		const nodeVersion = core.getInput('node');
 

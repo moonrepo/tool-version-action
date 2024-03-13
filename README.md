@@ -1,4 +1,8 @@
-# moon - Automatic tool versioning
+# moon - Automatic tool versioning (DEPRECATED)
+
+> This action is deprecated and will be removed in the future. moon >= 1.14 supports partial
+> versions, and overriding versions with environment variables. Learn more:
+> https://moonrepo.dev/docs/guides/open-source
 
 Since [moon](https://github.com/moonrepo/moon) requires fully-qualified semantic versions for tools
 in its toolchain, this action will automatically determine valid versions based on a partial

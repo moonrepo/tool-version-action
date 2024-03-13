@@ -1,3 +1,7 @@
+# 1.4.0
+
+- Deprecated the action. Use moon directly.
+
 # 1.3.2
 
 - Update dependencies.
